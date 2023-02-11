@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+/* CSS applied to navigation Section */
+.nav_menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 10px 30px;
+}
+.nav_menu ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding: 12px;
+    line-height: 40px;
+}
+.nav_menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+.mobile_menu{
+    font-size: 30px;
+    padding: 10px;
+    display: none
+}
+.head{
+    padding: 14px;
+}
+.head img{
+    width: 150px;
+    line-height: 40px;
+}
+/* CSS applied to header section */
+header{
+    background-image: url('images/Highlight-hero.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+.surface_head{
+    width: 600px;
+    padding: 200px 70px;
+    color: #fff;
+}
+.surface_head h1{
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.surface_head p{
+    margin: 10px 0 30px 0;
+    font-size: 18px;
+    font-weight: 200;
+}
+.surface_head a{
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(29, 85, 238);
+    padding: 10px 20px;
+    font-weight: 600;
+}
+.right_menu select{
+    border: none;
+    padding: 10px;
+}
+/* CSS applied to section home cards */
+.home_cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+.h-card{
+    width: 300px;
+}
+.h-card img{
+    width: 100%;
+    max-width: 500px;
+}
+.h-card a{
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    color: rgb(35, 147, 238);
+}
+.h-card a::after{
+    content: ">";
+    padding: 0 10px;
+}
+.h-card a::before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: rgb(21, 103, 209);
+    top: 100%;
+}
+.h-card a:hover::before{
+    width: 95%;
+}
+.card-info{
+    line-height: 25px;
+}
+.card-info p{
+    padding: 10px 0;
+}
+/* CSS applid to ios section */
+.look_android{
+    background-image: url('images/gldn-Hero-MSCOM.webp');
+    background-size: cover;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 30px;
+}
+.ios_section{
+    padding: 190px 100px;
+}
+.sect_info{
+    width: 370px;
+}
+.sect_info h1{
+    font-size: 40px;
+    font-weight: 500;
+}
+.sect_info p{
+    margin: 20px 0 30px 0;
+}
+.sect_info a{
+    font-weight: 600;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: rgb(30, 68, 238);
+    color: #fff;
+}
+.business_info{
+    padding-top: 50px;
+}
+.b_head{
+    padding-left: 20px;
+}
+.business_card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 40px;
+}
+.b_card{
+    width: 300px;
+}
+.b_card img{
+    width: 100%;
+    max-width: 500px;
+}
+.b_card a{
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    color: rgb(35, 147, 238);
+}
+.b_card a::after{
+    content: ">";
+    padding: 0 10px;
+}
+.b_card a::before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: rgb(21, 103, 209);
+    top: 100%;
+}
+.b_card a:hover::before{
+    width: 95%;
+}
+.contact_section{
+    display: flex;
+    gap: 30px;
+    padding: 50px;
+    line-height: 20px;
+    margin-top: 48px;
+}
+.contact_section h4{
+    line-height: 23px;
+    font-weight: 400;
+}
+.contact_section i{
+    font-size: 25px;
+}
+/* CSS applied to footer section */
+footer{
+    background: #f2f2f2;
+    color: #928c8c;
+    padding-bottom: 20px;
+}
+.footer_section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 90px;
+    padding: 55px;
+}
+.foot_part ul li{
+    list-style: none;
+    font-size: 12px;
+    line-height: 30px;
+}
+.footer_base{
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    padding: 10px 20px;
+}
+.base_left{
+    display: flex;
+    gap: 5px;
+}
+.base_right ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+/* media queries for device responsivness */
+@media (max-width:1000px) {
+    .mobile_menu{
+        display: block;
+    }
+    .nav_menu .main_menu,.right_menu select{
+        display: none;
+    }
+}
+@media (max-width:600px) {
+    .head {
+        text-align: center;
+        padding: 14px;
+    }
+    .nav_menu{
+        display: block;
+    }
+    .right_menu{
+        float: right;
+    }
+    header {
+        height: 300px;
+    }
+    .surface_head {
+        width: 350px;
+        padding: 15px 14px;
+    }
+    .sect_info {
+        width: 300px;
+    }
+    .ios_section {
+        padding: 160px 10px;
+    }
+    .sect_info h1 {
+        font-size: 27px;
+    }
+    .h-card{
+        margin: 20px 0;
+        width: 340px;
+    }
+    .b_card {
+        margin: 20px 0;
+        width: 340px;
+    }
+    .footer_section{
+        display: block;
+    }
+    .foot_part{
+        margin: 15px 0;
+    }
+    .footer_base{
+        display: none;
+    }
+}
